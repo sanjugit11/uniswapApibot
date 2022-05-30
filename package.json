@@ -1,0 +1,19 @@
+{
+  "name": "trading_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "binance-api-node": "^0.11.3",
+    "cron": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "ethereumjs-tx": "^1.3.7",
+    "node-crypto-api": "^1.0.8",
+    "web3": "^1.7.3"
+  }
+}
