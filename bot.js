@@ -34,8 +34,11 @@ let compare = async() =>{
     const HoldPercent = (BNBAuto *3/100).toFixed(0);
     console.log(HoldPercent);
     //differnce real price 3% - pool price
-    const comapreMarketPrice = BNBAuto - HoldPercent;
-    console.log(comapreMarketPrice,"market price 3% less");
+    
+    const comapreMarketPriceLow = Number(BNBAuto) - Number(HoldPercent);
+    console.log(comapreMarketPriceLow,"market price 3% less");
+    const comapreMarketPriceHigh= Number(BNBAuto) + Number(HoldPercent);
+    console.log(comapreMarketPriceHigh,"market price 3% High");
 
     // const utcTimestamp = new Date().getTime();
     // console.log(utcTimestamp);
@@ -50,7 +53,7 @@ let compare = async() =>{
         "hex",
     );
 
-    if (poolPriceFixed<=comapreMarketPrice){
+    if (poolPriceFixed<=comapreMarketPriceLow){
         const PriceDifferance = BNBAuto - poolPriceFixed;
         console.log(PriceDifferance,"tokenCalForPriceDiff");
     
@@ -78,7 +81,7 @@ let compare = async() =>{
         const getAmountOut = await uni_contract.methods.getAmountsOut(etherCall,["0x262afAaDa39435a617A3049Db2BF3e999190eE6E","0x81FA727E73778f0d8106C10be8d0311E612A99cE"]).call();
         console.log(getAmountOut,"getamountout");
 
-    }else if (poolPriceFixed >= comapreMarketPrice){      //swapExactETHForTokens
+    }else if (poolPriceFixed >= comapreMarketPriceHigh){      //swapExactETHForTokens
         const PriceDifferance =  poolPriceFixed -BNBAuto ;
         console.log(PriceDifferance,"tokenCalForPriceDiff");
         // const decimalOfTokenCal = PriceDifferance*10**18;
