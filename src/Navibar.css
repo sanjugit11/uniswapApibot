@@ -1,0 +1,30 @@
+.navbar{
+    background-color: rgb(77, 76, 76);
+    width: 100%;
+    height:60px;
+    z-index: 1;
+}
+.logo{
+    text-align: left;
+    left:0;
+    
+}
+img{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 26px;
+    margin-left: 14px;
+
+   }
+
+ .navbar p{
+    color: rgb(178, 126, 250);
+    padding: 10px 0px 0px 80px;
+    /* font-size: large; */
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }  

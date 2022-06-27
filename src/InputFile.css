@@ -1,0 +1,71 @@
+.App-header{
+    display:none;
+    height:800px;
+    width:800px;
+    margin-left: 36%;
+    background-color: rgb(100, 99, 100);
+    border-style:groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.back{
+    margin-bottom: 10px;
+    margin-right: 680px;
+    left:0;
+    
+}
+.back a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(210, 61, 71);
+    font-weight: bold;
+
+}
+.back a:hover{
+    color: rgb(13, 13, 233);
+}
+
+.textArea{
+    margin-bottom: 100px;
+}
+.textArea h1 {
+     color:white;
+}
+.textArea h4 {
+    color:white;
+}
+.textArea p {
+    color:rgb(69, 225, 222);
+    font-size: 15px;
+}
+.clickArea{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 300px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
+}
+.clickArea input{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.clickArea button{
+    background-color: rgb(193, 219, 227);
+     font-size: 26px;
+      min-width: 50px;
+      width: 100px;
+       border-radius:8px;
+       cursor: pointer;
+}
+

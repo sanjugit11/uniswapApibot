@@ -1,0 +1,95 @@
+.sidebar{
+  width: 100%;
+  height:90vh;
+  background-color: bisque;
+  z-index: 1;
+}
+.sidemodule{
+  width: 15%;
+  height:93.7vh;
+  /* position: fixed; */
+  background-color: rgb(77, 76, 76);
+  left:0;
+  min-width: 280px;
+}
+.buttonArea{
+  padding: 20px  0px  0px  0px;
+  /* background-color: aquamarine; */
+
+}
+
+.buttonArea button{
+  /* margin-top: 0px; */
+
+  height: 37px;
+  width: 100%;
+  font-size: 20px;
+  color: aliceblue;
+  align-items: center; 
+  justify-content: center; 
+  background: transparent;
+  border: none !important;
+  
+  /* font-size:0; */
+}
+
+.buttonArea button img{
+  margin-left: 40px;
+  /* background-color: aquamarine; */
+    padding: 0px  7px  6px  0px;
+    position: fixed;
+    height:40px;
+    width : 33px;
+    left: 0;
+    align-items: center; 
+    justify-content: center; 
+  }
+.buttonArea button:hover {
+  background-color: #4eb0e9;
+  color: white;
+  cursor:auto
+}
+
+.version{
+  color:rgb(252, 251, 251);
+  position: fixed;     
+  text-align: left;    
+  bottom: 30px; 
+  width: 100%;   
+  padding-left: 100px; 
+}
+
+.menu{
+  color:white;
+  font-size: large;
+  text-align: center;
+  background-color: rgb(178, 126, 250);
+}
+/* content */
+.content{
+  width: 85%;
+  min-width: 500px;
+  height:93.7vh;
+  position: fixed;
+  right:0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+ .content img{
+  width: 500px;
+  height: 500px;
+  margin-top: 150px;
+  /* position: fixed; */
+ 
+ }
+
+ .buttonArea a{
+  text-decoration: none;
+  color: white;
+ }
+
+ .buttonArea a:hover{
+  cursor:pointer;
+  background-color:  #4eb0e9;
+ }
