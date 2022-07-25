@@ -45,7 +45,7 @@
     justify-content: center; 
   }
 .buttonArea button:hover {
-  background-color: #4eb0e9;
+  background-color: rgb(178, 126, 250);
   color: white;
   cursor:auto
 }
@@ -75,15 +75,54 @@
   background-color: white;
   display: flex;
   justify-content: center;
+
 }
  .content img{
-  width: 500px;
-  height: 500px;
-  margin-top: 150px;
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
   /* position: fixed; */
  
  }
+ .content h1{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 33px;
+   margin-top: 70px;
+   text-shadow: 3px 2px rgb(196, 195, 197);
+   -webkit-animation: mover 2s infinite  alternate;
+   animation: mover 1.8s infinite  alternate;
+   min-width: 300px;
+  }
 
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.content table{
+  margin-top: 500px;
+  text-align: center;
+  height: 200px;
+  width: 500px;
+  min-width: 500px;
+  position: absolute;
+  font-family: arial, sans-serif;
+  /* border-style:inset; */
+
+}
+.content td, th {
+  border-bottom: 2px solid black;
+  border-top: 0;
+  text-align: center;
+  padding: 8px;
+}
+.content td{
+  border-bottom: 1px solid black;
+}
  .buttonArea a{
   text-decoration: none;
   color: white;
@@ -91,5 +130,18 @@
 
  .buttonArea a:hover{
   cursor:pointer;
-  background-color:  #4eb0e9;
+  background-color:rgb(178, 126, 250);
+ }
+
+ .price{
+  /* border: red solid 1px; */
+  margin-top: 630px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+ }
+ .price p{
+  left :0;
+  color:  rgb(178, 126, 250);
+  font-size: 19px;
  }

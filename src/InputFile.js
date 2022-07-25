@@ -5,7 +5,7 @@ const InputFile = () => {
 
     const [data, setData] = useState( );
     const [disable, setDisable] = useState(false);
-  
+ 
     const onChange = (event) => {
       setData(event.target.value)
     }
@@ -48,6 +48,7 @@ const InputFile = () => {
         });
       
     } 
+
 
     return(
       <>
